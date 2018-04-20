@@ -8,7 +8,7 @@
   "window":{
     "backgroundTextStyle":"light",
     "navigationBarBackgroundColor": "#907DF0",
-    "navigationBarTitleText": "疾病一点搜",
+    "navigationBarTitleText": "网盘搜索",
     "navigationBarTextStyle":"white",
     "enablePullDownRefresh": true
   },

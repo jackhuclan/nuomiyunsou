@@ -2,7 +2,7 @@
 
 <view class="header">
   <view class="search-area">
-    <input placeholder="搜疾病 / 科普文章" class="search-words" id="search_words" focus="{{focus}}" name="search_words" value="{{searchWord}}" bindinput="inputHandler" bindfocus="focusHandler" bindblur="blurHandler" />
+    <input placeholder="搜电影 / 小说" class="search-words" id="search_words" focus="{{focus}}" name="search_words" value="{{searchWord}}" bindinput="inputHandler" bindfocus="focusHandler" bindblur="blurHandler" />
     <view calss="clear" hidden="{{isHide}}"><image class="close" mode="scaleToFill" src="../../icons/close.png" bindtap="clearInput" /></view>
     <button type="default" bindtap="excuteSearch" class="search-btn" hover-class="search-btn-hover" disabled="{{isDisabled}}">搜索</button>
   </view>
