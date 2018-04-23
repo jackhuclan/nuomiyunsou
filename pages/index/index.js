@@ -4,7 +4,7 @@ Page({
   data: {
     userInfo: {},
     isFail:false,
-    hotList: [{ id: 1, content: "二代妖精" }, { id: 2, content: "二代妖精" }, { id: 3, content: "二代妖精" }, { id: 4, content: "二代妖精" }, { id: 5, content: "二代妖精" }, { id: 6, content: "二代妖精" }, { id: 7, content: "二代妖精" }, { id: 8, content: "二代妖精" }],
+    hotList: [{ id: 1, content: "南方有乔木" }, { id: 2, content: "狱锁狂龙" }, { id: 3, content: "凤求凰" }, { id: 4, content: "西游记" }, { id: 4, content: "两只蝴蝶" }],
     recommendList: []
   },
   //事件处理函数

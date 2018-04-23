@@ -18,3 +18,17 @@ page {
 .content{
    font-size:1rem;
 }
+.deatil{
+  padding-top: 30%;
+  text-align: center;
+}
+.title{
+  padding-bottom: 10%;
+}
+.btn{
+  width: 200px;
+}
+.deatil_url{
+  padding-bottom: 15%;
+  color: green;
+}

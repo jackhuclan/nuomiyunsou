@@ -40,9 +40,9 @@
     <view class="inner">
       <block wx:for="{{List}}" wx:for-item="article" wx:for-index="i" wx:key="{{article.id}}">
         <view class="article" bindtap="getDetail" data-id="{{article.url}}">
-          <image class="article-avatar" mode="scaleToFill" src="{{article.avatar}}" />
+          <image class="article-avatar" mode="scaleToFill" src="../../icons/nuomi.jpg" />
           <view class="article-info">
-            <text class="WText16PT article-title">{{article.name}}</text>
+            <text class="WText16PT article-title">{{article.name}}-网盘</text>
           </view>
         </view>
       </block>
