@@ -26,8 +26,8 @@ Page({
       });
       //发送请求回去初始化数据
       wx.request({
-        url: app.globalData.appHost + '/GetDieaseList',
-        data: { PageIndex: 1, queryStr: option.q },
+        url: app.globalData.appHost + '/skydriveinterface',
+        data: { name: option.q },
         method: 'GET',
         success: function (res) {
           //如果没有相关文章
@@ -64,8 +64,8 @@ Page({
         },
       })
       wx.request({
-        url: app.globalData.appHost + '/GetArticleList',
-        data: { PageIndex: 1, queryStr: option.q },
+        url: app.globalData.appHost + '/skydriveinterface',
+        data: { name: option.q },
         method: 'GET',
         success: function (res) {
           //如果没有相关文章
@@ -104,7 +104,7 @@ Page({
     var that = this
     wx.request({
       url: app.globalData.appHost + '/ColleagueCircle/Search/GetDieaseList',
-      data: { PageIndex: ++that.data.diseasePageIndex, queryStr: that.data.searchWord },
+      data: { name: that.data.searchWord },
       method: 'GET',
       success: function (res) {
         //如果成功取到相关疾病
@@ -130,8 +130,8 @@ Page({
   getMoreArticle: function (e) {
     var that = this
     wx.request({
-      url: app.globalData.appHost + '/GetArticleList',
-      data: { PageIndex: ++that.data.articlePageIndex, queryStr: that.data.searchWord },
+      url: app.globalData.appHost + '/skydriveinterface',
+      data: { name: that.data.searchWord },
       method: 'GET',
       success: function (res) {
         //如果成功取到相关疾病
@@ -180,10 +180,11 @@ Page({
 
     //发送请求回去初始化数据
     wx.request({
-      url: app.globalData.appHost + '/GetDieaseList',
-      data: { PageIndex: 1, queryStr: that.data.searchWord },
+      url: app.globalData.appHost + '/skydriveinterface',
+      data: {name: that.data.searchWord },
       method: 'GET',
       success: function (res) {
+        console.log(res);
         //如果没有相关文章
         if (res.data.total == 0) {
           if (backNum != 0) {
@@ -219,10 +220,11 @@ Page({
       },
     })
     wx.request({
-      url: app.globalData.appHost + '/GetArticleList',
-      data: { PageIndex: 1, queryStr: that.data.searchWord },
+      url: app.globalData.appHost + '/skydriveinterface',
+      data: { name: that.data.searchWord },
       method: 'GET',
       success: function (res) {
+        console.log(res);
         //如果没有相关文章
         if (res.data.total == 0) {
           if (backNum != 0) {
@@ -239,6 +241,7 @@ Page({
         }
         backNum++;
         //如果成功取到相关文章
+        //console.log(res.data.total);
         res.data.isShowArticle = res.data.total > 3;
         that.setData({
           articleItem: res.data

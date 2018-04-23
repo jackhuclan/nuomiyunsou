@@ -3,14 +3,15 @@
   <view class="header">
     <view class="brand">
       <image src="../../icons/search.png" class="brand-img" mode="scaleToFill"/>
-      <text class="brand-text">网盘搜索</text>
+      <text class="brand-text">糯米云搜</text>
     </view>
     <view class="search-area" bindtap="excuteSearch">
-      <input placeholder="搜电影 / 小说" class="search-words" id="search_words" bindfocus="focusHandler" />
+      <input placeholder="搜疾病 / 科普文章" class="search-words" id="search_words" bindfocus="focusHandler" />
       <button type="default" bindtap="excuteSearch" class="search-btn" hover-class="search-btn-hover">搜索</button>
     </view>
   </view>
   <scroll-view scroll-y="true" style="height: 467px;" scroll-top="0">
+
     <view class="white-box hot">
       <view class="title">
         <text class="WText14PT middle-line">热门搜索</text>
@@ -21,9 +22,10 @@
         </block>
       </view>
     </view>
+<!--
     <view class="white-box recommend">
       <view class="title">
-        <text class="WText14PT middle-line">推荐资源</text>
+        <text class="WText14PT middle-line">新鲜干货</text>
       </view>
       <view class="articles">
         <view class="text-center" wx:if="{{isFail}}">刷新页面试试</view>
@@ -38,6 +40,6 @@
           </view>
         </block>
       </view>
-    </view>
+    </view>-->
   </scroll-view>
 </view>

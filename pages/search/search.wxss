@@ -3,7 +3,6 @@
 .header {
   width: 100%;
   height: 50px;
-  background-image: url('');
   background-color: #907df0;
   padding-top:10px;
 }

@@ -12,8 +12,9 @@
   <block wx:if="{{articleItem.total>0}}">
     <template is="accordion_article" data="{{...articleItem}}" />
   </block>
+  <!--
   <block wx:if="{{diseaseItem.total>0}}">
     <template is="accordion_disease" data="{{...diseaseItem}}" />
-  </block>
+  </block>-->
   <view wx:if="{{noSearchResult}}" class="no-result">没有找到相关数据</view>
 </scroll-view>

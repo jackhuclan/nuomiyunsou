@@ -16,7 +16,7 @@ Page({
       })
     });
     wx.request({
-      url: app.globalData.appHost + '/GetArticleList',
+      url: app.globalData.appHost + '/skydriveinterface',
       data: { isFresh: "yes" },
       method: 'GET',
       success: function (res) {

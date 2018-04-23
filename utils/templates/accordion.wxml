@@ -39,10 +39,10 @@
     <view class="summary">相关文章<text class="total">{{total}}</text>篇</view>
     <view class="inner">
       <block wx:for="{{List}}" wx:for-item="article" wx:for-index="i" wx:key="{{article.id}}">
-        <view class="article" bindtap="getDetail" data-id="{{article.Id}}">
+        <view class="article" bindtap="getDetail" data-id="{{article.url}}">
           <image class="article-avatar" mode="scaleToFill" src="{{article.avatar}}" />
           <view class="article-info">
-            <text class="WText16PT article-title">{{article.title}}</text>
+            <text class="WText16PT article-title">{{article.name}}</text>
           </view>
         </view>
       </block>

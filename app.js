@@ -60,6 +60,6 @@ App({
   },
   globalData: {
     userInfo: null,
-    appHost: "https://api.getweapp.com/vendor/zainot"
+    appHost: "https://wp.zuiyingshi.cn/api/baidu"
   }
 })

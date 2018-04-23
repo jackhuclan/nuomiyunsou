@@ -8,7 +8,7 @@
   "window":{
     "backgroundTextStyle":"light",
     "navigationBarBackgroundColor": "#907DF0",
-    "navigationBarTitleText": "网盘搜索",
+    "navigationBarTitleText": "糯米云搜",
     "navigationBarTextStyle":"white",
     "enablePullDownRefresh": true
   },

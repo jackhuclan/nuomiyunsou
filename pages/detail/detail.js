@@ -5,19 +5,10 @@ Page({
     article: {},
   },
   onLoad: function (option) {
+    console.log(option);
     var that = this
-    wx.request({
-      url: app.globalData.appHost + '/GetArticleById',
-      data: { id: option.s },
-      method: 'GET',
-      success: function (res) {
         that.setData({
-          article: res.data
+          article: option.s
         })
-      },
-      fail:function(res){
-         console.log(res.errMsg);
-      }
-    })
   }
 })
