@@ -16,6 +16,7 @@ Page({
         userInfo: userInfo
       })
     });
+    /**
     wx.request({
       url: app.globalData.appHost + '/skydriveinterface',
       data: { isFresh: "yes" },
@@ -32,6 +33,7 @@ Page({
          console.log(res.errMsg);
       }
     });
+    **/
   },
   userNameInput: function (e) {
     this.setData({
@@ -51,9 +53,9 @@ Page({
   excuteSearch: function (e) {
     if (this.data.userName==""){
       wx.showToast({
-        title: '输入框不能为空',
-        icon: 'error',
-        duration: 2000
+        title: '请先输入关键字',
+        icon: 'loading',
+        duration: 1000
       });return;
     }
     wx.navigateTo({

@@ -25,6 +25,7 @@ Page({
         focus: false,
         isHide: false
       });
+      /**
       //发送请求回去初始化数据
       wx.request({
         url: app.globalData.appHost + '/skydriveinterface',
@@ -46,7 +47,7 @@ Page({
             })
           }
           backNum++;
-          //如果成功取到相关疾病
+          //如果成功取得数据
           res.data.isShowDisease = res.data.total > 3;
           for (var i = 0; i < res.data.List.length; i++) {
             if (i == 0) {
@@ -63,7 +64,9 @@ Page({
             diseaseItem: res.data
           })
         },
-      })
+      })**/
+
+
       wx.request({
         url: app.globalData.appHost + '/skydriveinterface',
         data: { name: option.q },
@@ -180,6 +183,7 @@ Page({
     }
 
     //发送请求回去初始化数据
+    /**
     wx.request({
       url: app.globalData.appHost + '/skydriveinterface',
       data: {name: that.data.searchWord },
@@ -220,6 +224,7 @@ Page({
         })
       },
     })
+    **/
     wx.request({
       url: app.globalData.appHost + '/skydriveinterface',
       data: { name: that.data.searchWord },
