@@ -2,14 +2,12 @@
 
 ### 说明：
 
-实现疾病搜索功能，特色：
+实现网盘搜索功能，特色：
 - 使用fontawesome字体
 
 ### 数据接口:
 
-- https://api.getweapp.com/vendor/zainot/GetArticleList
-- https://api.getweapp.com/vendor/zainot/GetArticleById
-- https://api.getweapp.com/vendor/zainot/GetDieaseList
+- https://htcc.fendous.cn/api/baidu/skydriveinterface
 
 ### 目录结构：
 
@@ -24,8 +22,13 @@
 
 ### 项目截图：
 
-https://www.getweapp.com/project?projectId=58a57e5252e1e8733dc56802
+## Screen Shots
 
-### 感谢：
+* 首页
+![首页](./doc/1.jpg) 
+* 搜索页
+![文章列表](./doc/2.jpg)
 
-本项目原始版本由AndrewZheng提供：https://github.com/AndrewZheng/DiesaseSearch# -
+* 内容页
+![文章内容](./doc/3.jpg)
+
