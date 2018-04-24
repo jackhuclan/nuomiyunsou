@@ -23,7 +23,8 @@ Page({
         searchWord: option.q,
         noSearchData: true,
         focus: false,
-        isHide: false
+        isHide: false,
+        hiddenLoading: false
       });
       /**
       //发送请求回去初始化数据
@@ -84,6 +85,7 @@ Page({
           } else {
             that.setData({
               noSearchResult: false,
+              hiddenLoading: true,
             })
           }
           backNum++;
@@ -159,6 +161,7 @@ Page({
     //清空上次的search结果
     that.setData({
       noSearchResult: false,
+      hiddenLoading: false,
     })
 
     if (that.data.searchWord == "") {
@@ -243,6 +246,7 @@ Page({
         } else {
           that.setData({
             noSearchResult: false,
+            hiddenLoading: true,
           })
         }
         backNum++;
