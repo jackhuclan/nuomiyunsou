@@ -5,8 +5,9 @@
       <image src="../../icons/search.png" class="brand-img" mode="scaleToFill"/>
       <text class="brand-text">糯米云搜</text>
     </view>
-    <view class="search-area" bindtap="excuteSearch">
-      <input placeholder="搜电影 / 小说" class="search-words" id="search_words" bindfocus="focusHandler" />
+    <view class="search-area">
+    <!--bindfocus="focusHandler"-->
+      <input placeholder="搜电影 / 小说" class="search-words" id="search_words" bindinput ="userNameInput" />
       <button type="default" bindtap="excuteSearch" class="search-btn" hover-class="search-btn-hover">搜索</button>
     </view>
   </view>

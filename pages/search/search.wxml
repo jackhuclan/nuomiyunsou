@@ -1,5 +1,6 @@
 <import src="../../utils/templates/accordion.wxml" />
-
+<!--默认隐藏-->
+<loading hidden="{{hiddenLoading}}">正在加载</loading>
 <view class="header">
   <view class="search-area">
     <input placeholder="搜电影 / 小说" class="search-words" id="search_words" focus="{{focus}}" name="search_words" value="{{searchWord}}" bindinput="inputHandler" bindfocus="focusHandler" bindblur="blurHandler" />

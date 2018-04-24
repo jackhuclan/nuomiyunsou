@@ -5,7 +5,8 @@ Page({
     userInfo: {},
     isFail:false,
     hotList: [{ id: 1, content: "南方有乔木" }, { id: 2, content: "狱锁狂龙" }, { id: 3, content: "凤求凰" }, { id: 4, content: "西游记" }, { id: 4, content: "两只蝴蝶" }],
-    recommendList: []
+    recommendList: [],
+    userName:'',
   },
   //事件处理函数
   onLoad: function () {
@@ -32,6 +33,11 @@ Page({
       }
     });
   },
+  userNameInput: function (e) {
+    this.setData({
+      userName: e.detail.value
+    })
+  },
   getDetail: function (e) {
     wx.navigateTo({
       url: '../detail/detail?s=' + e.currentTarget.dataset.id
@@ -43,8 +49,15 @@ Page({
     })
   },
   excuteSearch: function (e) {
+    if (this.data.userName==""){
+      wx.showToast({
+        title: '输入框不能为空',
+        icon: 'error',
+        duration: 2000
+      });return;
+    }
     wx.navigateTo({
-      url: '../search/search'
+      url: '../search/search?q=' + this.data.userName
     })
   },
   excuteHotSearch:function(e){

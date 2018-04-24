@@ -12,7 +12,8 @@ Page({
     pageSize: 3,
     noSearchData: false,
     noSearchResult: false,
-    isDisabled: false,
+    isDisabled: true,
+    hiddenLoading: true
   },
   onLoad: function (option) {
     var that = this;
@@ -97,7 +98,7 @@ Page({
 
   getDetail: function (e) {
     wx.navigateTo({
-      url: '../detail/detail?s=' + e.currentTarget.dataset.id
+      url: '../detail/detail?s='+encodeURIComponent(e.currentTarget.dataset.id)
     })
   },
   getMoreDisease: function (e) {

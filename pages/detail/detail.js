@@ -6,9 +6,10 @@ Page({
     url: 'url'
   },
   onLoad: function (option) {
+    console.log(decodeURIComponent(option.s))
     var that = this
         that.setData({
-          article: option.s
+          article: decodeURIComponent(option.s)
         })
   },
   show(e) {
