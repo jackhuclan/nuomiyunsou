@@ -233,7 +233,7 @@ Page({
       data: { name: that.data.searchWord },
       method: 'GET',
       success: function (res) {
-        console.log(res);
+        //console.log(res);
         //如果没有相关文章
         if (res.data.total == 0) {
           if (backNum != 0) {

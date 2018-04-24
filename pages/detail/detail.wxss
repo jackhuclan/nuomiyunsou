@@ -1,5 +1,5 @@
 page {
-  background-color: #FFFFFF;
+  background-color: #F4F4F4;
 }
 
 .detail{
@@ -19,14 +19,21 @@ page {
    font-size:1rem;
 }
 .deatil{
-  padding-top: 30%;
-  text-align: center;
+  margin-top: 20px;
 }
 .title{
-  padding-bottom: 10%;
+  font-size: 15px;
+  margin-bottom: 5px;
+  margin-left: 7%;
 }
 .btn{
-  width: 200px;
+  width: 150px;
+  margin:20px 0;
+  background: green;
+  color: white;
+  margin-left: 30%;
+  font-size: 15px;
+  
 }
 .deatil_url{
   padding-bottom: 15%;

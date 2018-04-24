@@ -6,7 +6,7 @@ Page({
     url: 'url'
   },
   onLoad: function (option) {
-    console.log(decodeURIComponent(option.s))
+    //console.log(decodeURIComponent(option.s))
     var that = this
         that.setData({
           article: decodeURIComponent(option.s)
@@ -29,7 +29,7 @@ Page({
     })
     wx.getClipboardData({
       success(res) {
-        console.log(res.data)
+        //console.log(res.data)
       }
     })
   }

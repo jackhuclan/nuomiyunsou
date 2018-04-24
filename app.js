@@ -60,6 +60,6 @@ App({
   },
   globalData: {
     userInfo: null,
-    appHost: "https://wp.zuiyingshi.cn/api/baidu"
+    appHost: "https://htcc.fendous.cn/api/baidu"
   }
 })
