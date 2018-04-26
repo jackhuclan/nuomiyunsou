@@ -42,7 +42,7 @@
         <view class="article" bindtap="getDetail" data-id="{{article.url}}">
           <image class="article-avatar" mode="scaleToFill" src="../../icons/nuomi.jpg" />
           <view class="article-info">
-            <text class="WText16PT article-title">{{article.name}}-网盘</text>
+            <text class="WText16PT article-title" style="font-size:14px;">{{article.name}}</text>
           </view>
         </view>
       </block>

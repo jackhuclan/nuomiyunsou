@@ -4,7 +4,7 @@ Page({
   data: {
     userInfo: {},
     isFail:false,
-    hotList: [{ id: 1, content: "南方有乔木" }, { id: 2, content: "狱锁狂龙" }, { id: 3, content: "凤求凰" }, { id: 4, content: "西游记" }, { id: 4, content: "两只蝴蝶" }],
+    hotList: [{ id: 1, content: "南方有乔木" }, { id: 2, content: "狱锁狂龙" }, { id: 3, content: "凤求凰" }, { id: 4, content: "西游记" }, { id: 5, content: "两只蝴蝶" }, { id: 6, content: "情人" }, { id: 7, content: "教父" }, { id: 8, content: "终结者" },],
     recommendList: [],
     userName:'',
   },

@@ -15,5 +15,5 @@
 <view class='deatil'>
   <view class="title">网盘链接</view>
     <textarea style='width:80%;margin:0 auto;word-break: break-all;background-color:white;border-radius: 5px;color:green;font-size:15px;padding:15px 15px;height:65px' disabled="disabled">{{article}}</textarea>
-  <button bindtap='show' id="{{article}}" class='btn'>复制链接</button>
+  <button bindtap='show' id="{{article}}" class='btn' style='background:#337ab7;color:white'>复制链接</button>
 </view>
